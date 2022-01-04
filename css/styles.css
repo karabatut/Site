@@ -1,41 +1,48 @@
-:root{
-    --primary: #222831;
-    --secondary: #393E46;
-    --tertiary: #B55400;
-    --quaternary: #EEEEEE;
+:root {
+  --primary: #222831;
+  --secondary: #393e46;
+  --tertiary: #b55400;
+  --quaternary: #eeeeee;
 }
-html{
-    scroll-behavior: smooth;
-}
-
-@keyframes pixelAnimation{
-    0% {left:10%;}
-    25%{left:50%; }
-    50%{left:70%;}
-    100%{left:10%; }
+html {
+  scroll-behavior: smooth;
 }
 
+@keyframes pixelAnimation {
+  0% {
+    left: 10%;
+  }
+  25% {
+    left: 50%;
+  }
+  50% {
+    left: 70%;
+  }
+  100% {
+    left: 10%;
+  }
+}
 
 body {
   background-color: var(--primary);
   height: 100%;
 }
 
-#mainSection{
-    height: 100vh;
-    text-align: center;
+#mainSection {
+  height: 100vh;
+  text-align: center;
 }
 
-#aboutMeSection{
-    height: 100vh;
+#aboutMeSection {
+  height: 100vh;
 }
 
-#aboutMeSection p{
-    margin-right: 0px;
-    padding-top: 10%;
-    padding-left: 7%;
-    padding-right: 10%;
-    font-size: 45px;
+#aboutMeSection p {
+  margin-right: 0px;
+  padding-top: 15%;
+  padding-left: 7%;
+  padding-right: 10%;
+  font-size: 45px;
 }
 
 button {
@@ -45,49 +52,83 @@ button {
   text-align: center;
   font-size: 25px;
   padding: 0 3rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-button:hover{
-   opacity: 0.8;
-   
+button:hover {
+  opacity: 0.8;
 }
 
-
-.middleContainer{
-
-    font-size: 60px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: var(--quaternary);
-    height: auto;
+.middleContainer {
+  margin-top: 15%;
+  font-size: 60px;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: var(--quaternary);
+  height: auto;
 }
-
 
 .topBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
-  height: 60px;
+  height: 40px;
   padding: 30px 2%;
 }
 
-.profilFoto{
-    float: right;
-    margin-top: 5%;
-    margin-left: 10px;
-    margin-right: 5%;
-    clear: both;
-    border-radius: 50%;
-    max-width: 270px;
-    height: auto; 
-
+.topBarRight {
+  margin-right: 5%;
 }
 
-.pixelArt{
-    position:fixed;
-    bottom:0px;
-    left:10%;
-    animation-name: pixelAnimation;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+.profilFoto {
+  float: right;
+  margin-top: 10%;
+  margin-left: 10px;
+  margin-right: 5%;
+  clear: both;
+  border-radius: 50%;
+  max-width: 270px;
+  height: auto;
 }
+
+.pixelArt {
+  position: fixed;
+  bottom: 0px;
+  left: 10%;
+  animation-name: pixelAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.experienceTab {
+  width: 20%;
+  float: left;
+}
+
+#experienceSection{
+    height: 100vh;
+}
+
+#Proven p{
+    font-size: 35px;
+}
+
+#Otonom p{   
+    font-size: 35px;
+}
+
+#Aselsan p{
+    font-size: 35px;
+}
+
+#Desistek p{
+    font-size: 35px;
+}
+
+#experienceContainer{
+    padding-top: 15%;
+}
+
+
