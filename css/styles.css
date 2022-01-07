@@ -105,30 +105,34 @@ button:hover {
 .experienceTab {
   width: 20%;
   float: left;
+  height: 100%;
+}
+
+.experienceInfoTab{
+  float: right;
+  width: 80%
 }
 
 #experienceSection{
     height: 100vh;
 }
 
-#Proven p{
-    font-size: 35px;
-}
-
-#Otonom p{   
-    font-size: 35px;
-}
-
-#Aselsan p{
-    font-size: 35px;
-}
-
-#Desistek p{
-    font-size: 35px;
-}
 
 #experienceContainer{
-    padding-top: 15%;
+    padding-top: 8%;    
+}
+#experienceContainer h5{
+    margin: 0 ;  
+    font-size: 35px;  
 }
 
+#experienceContainer h6{
+  margin: 15px 0 0 0;  
+  font-size: 30px;  
+}
+
+#experienceContainer p{
+  margin-top: 0;  
+  font-size: 30px;  
+}
 
