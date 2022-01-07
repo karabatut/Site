@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="scripts/scripts.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -17,13 +19,15 @@
   <body>
     <div class="topBar">
       <div class="topBarLeft">
-        <a href="#index">LOGO</a>
+        <a href="#mainSection">LOGO</a>
       </div>
 
       <div class="topBarRight">
-        <button type="button">Experience</button>
-        <button type="button">Games</button>
         <a href="#aboutMeSection"><button type="button">About Me</button></a>
+        <a href="#experienceSection"
+          ><button type="button">Experience</button></a
+        >
+        <button type="button">Games</button>
       </div>
     </div>
 
@@ -31,7 +35,7 @@
       <section id="mainSection">
         <h1>Hi, I'm Batuhan</h1>
         <p>Software engineer, Gamedev, Super cool guy</p>
-        <img class="pixelArt"src="images/PixelArt.png" alt="">
+        <img class="pixelArt" src="images/PixelArt.png" alt="" />
       </section>
       <section id="aboutMeSection">
         <img class="profilFoto" src="images/Batu.jpeg" alt="" />
@@ -41,6 +45,33 @@
           practiced it though. Working on a mobile game as a solo dev. Currently
           employed in Proven Bilişim as a Senior Software Developer.
         </p>
+      </section>
+      <section id="experienceSection">
+          <div id="experienceContainer">
+            <div class="experienceTab">
+                <button class="experienceTabLinks" onClick="openTab(event, 'Proven')" id="defaultOpen">Proven Bilişim</button><br />
+                <button class="experienceTabLinks" onClick="openTab(event, 'Otonom')">Otonom Teknoloji</button><br />
+                <button class="experienceTabLinks" onClick="openTab(event, 'Aselsan')" >Aselsan MGEO</button><br />
+                <button class="experienceTabLinks" onClick="openTab(event, 'Desistek')">Desistek Robotik</button><br />
+              </div>
+              <div id="Proven" class="experienceTabContent">
+                <p>June 2019 - current</p>
+                <p></p>
+              </div>
+              <div id="Otonom" class="experienceTabContent">
+                <p>Otonomda çalıştım</p>
+              </div>
+              <div id="Aselsan" class="experienceTabContent">
+                <p>Aselsanda çalıştım</p>
+              </div>
+              <div id="Desistek" class="experienceTabContent">
+                <p>Desistekte çalıştım</p>
+              </div>
+          </div>
+        
+        <script>
+          clickOnDefaultTab();
+        </script>
       </section>
     </div>
   </body>
