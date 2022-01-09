@@ -19,18 +19,16 @@
   <body>
     <div class="topBar">
       <div class="topBarLeft">
-        <a href="#mainSection">LOGO</a>
+        <a href="#"><img class="logo" src="images/b logo.png" alt="" /></a>
       </div>
 
       <div class="topBarRight">
-        <a href="#aboutMeSection"><button type="button">About Me</button></a>
-        <a href="#experienceSection"
-          ><button type="button">Experience</button></a
-        >
-        <button type="button">Games</button>
+        <a href="#aboutMeSection"><button type="button" class="topBarButton" onClick="topBarPressed(event)">About Me</button></a>
+        <a href="#experienceSection"><button type="button" class="topBarButton" onClick="topBarPressed(event)">Experience</button></a>
+        <a href="#gamesSection"><button type="button" class="topBarButton" onClick="topBarPressed(event)">Games</button></a>
       </div>
     </div>
-
+    
     <div class="middleContainer">
       <section id="mainSection">
         <h1>Hi, I'm Batuhan</h1>
@@ -91,6 +89,11 @@
         <script>
           clickOnDefaultTab();
         </script>
+      </section>
+      <section id="gamesSection">
+        <div>
+          <p>Things... that have not yet come to pass.</p>
+        </div>  
       </section>
     </div>
   </body>
