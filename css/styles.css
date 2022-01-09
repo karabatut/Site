@@ -28,6 +28,10 @@ body {
   height: 100%;
 }
 
+.logo{
+  max-width: 100px;
+}
+
 #mainSection {
   height: 100vh;
   text-align: center;
@@ -55,6 +59,10 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
+.topBarButton{
+  height: 100%;
+}
+
 button:hover {
   opacity: 0.8;
 }
@@ -74,12 +82,13 @@ button:hover {
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
-  height: 40px;
-  padding: 30px 2%;
+  height: 70px;
+  padding: 0px 2%;
 }
 
 .topBarRight {
   margin-right: 5%;
+  height: 100%;
 }
 
 .profilFoto {
@@ -145,3 +154,11 @@ button:hover {
   width: 100%;
 }
 
+#gamesSection{
+  height: 100vh;
+}
+
+#gamesSection p{
+  padding-top: 20%;
+  margin-left: 10%;
+}
