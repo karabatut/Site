@@ -1,22 +1,24 @@
 function openTab(evt, companyName){
-    var i, tabcontent, tabLinks;
+    defaultButtonColor();
+    tabOpener(companyName);
+}
+
+function defaultButtonColor(){
+    var buttons = document.getElementsByClassName('experienceTabLinks');
+    for(let button of buttons){
+        button.style.backgroundColor = "#222831";
+    }
+}
+
+function tabOpener(companyName){
+    var i, tabcontent;
 
     tabcontent = document.getElementsByClassName("experienceTabContent");
     for(i = 0; i < tabcontent.length; i++){
         tabcontent[i].style.display = "none";
-    }
-    tabLinks = document.getElementsByClassName('experienceTabLinks');
-
-    for(i = 0; i < tabLinks.length; i++){
-        tabLinks[i].style.backgroundColor = "#b55400";
-        tabLinks[i].className = tabLinks[i].className.replace("active", "");    
-    }
-    
+    }    
     document.getElementById(companyName).style.display = "block";
-    document.getElementById(getCompanyButtonName(companyName)).style.backgroundColor = "red";
-   // evt.currentTarget.style.backgroundColor = "red";
-    evt.currentTarget.className += "active";
-    
+    document.getElementById(getCompanyButtonName(companyName)).style.backgroundColor = "#b55400";
 }
 
 function clickOnDefaultTab(){

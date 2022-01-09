@@ -106,11 +106,14 @@ button:hover {
   width: 20%;
   float: left;
   height: 100%;
+  margin-left: 20px;
 }
 
 .experienceInfoTab{
   float: right;
-  width: 80%
+  width: 60%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 #experienceSection{
@@ -134,5 +137,11 @@ button:hover {
 #experienceContainer p{
   margin-top: 0;  
   font-size: 30px;  
+}
+
+.experienceTabLinks{
+  padding-top: 10%; 
+  padding-bottom: 10%;
+  width: 100%;
 }
 
