@@ -17,13 +17,13 @@ function defaultTopBarButtonColor(){
     }
 }
 
-function changeTopBarButtonColor(event){
-    event.currentTarget.style.backgroundColor = window.getComputedStyle(document.documentElement).getPropertyValue('--tertiary');
+function changeTopBarButtonColor(element){
+    element.style.backgroundColor = window.getComputedStyle(document.documentElement).getPropertyValue('--tertiary');
 }
 
 function topBarPressed(event){
-    defaultTopBarButtonColor();
-    changeTopBarButtonColor(event);
+   /* defaultTopBarButtonColor();
+    changeTopBarButtonColor(event.currentTarget);*/
 }
 
 function tabOpener(companyName){
@@ -44,3 +44,25 @@ function clickOnDefaultTab(){
 function getCompanyButtonName(companyName){
     return companyName.charAt(0).toLowerCase() + companyName.slice(1) + "Button";
 }
+
+window.addEventListener("scroll", function(){
+    var mainSection = document.getElementById("mainSection");
+    var aboutMeSection = document.getElementById("aboutMeSection");
+    var experienceSection = document.getElementById("experienceSection");
+    var gamesSection = document.getElementById("gamesSection");
+    if((window.scrollY > mainSection.offsetTop - 250) && (window.scrollY < (mainSection.offsetTop + mainSection.offsetHeight) + 250)){
+        defaultTopBarButtonColor();
+    }
+    if((window.scrollY > aboutMeSection.offsetTop - 250) && (window.scrollY < (aboutMeSection.offsetTop + aboutMeSection.offsetHeight) + 250)){
+        defaultTopBarButtonColor();
+        changeTopBarButtonColor(document.getElementById("aboutMeSectionButton"));
+    }
+    if((window.scrollY > experienceSection.offsetTop - 250) && (window.scrollY < (experienceSection.offsetTop + experienceSection.offsetHeight) + 250)){
+        defaultTopBarButtonColor();
+        changeTopBarButtonColor(document.getElementById("experienceSectionButton"));
+    }
+    if((window.scrollY > gamesSection.offsetTop - 250) && (window.scrollY < (gamesSection.offsetTop + gamesSection.offsetHeight) + 250)){
+        defaultTopBarButtonColor();
+        changeTopBarButtonColor(document.getElementById("gamesSectionButton"));
+    }
+});
