@@ -66,3 +66,11 @@ window.addEventListener("scroll", function(){
         changeTopBarButtonColor(document.getElementById("gamesSectionButton"));
     }
 });
+
+document.addEventListener('visibilitychange', function (event) {
+    if (document.hidden) {
+        document.title = "Gel lan buraya";
+    } else {
+        document.title = "Batut Homepage";
+    }
+});
