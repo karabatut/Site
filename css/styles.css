@@ -233,19 +233,40 @@ button:hover {
   }
 
   .experienceTabLinks{
-    width: 10%;
-    font-size: 10px;
+    font-size: 40%;
+    display: block;
+    text-align: center;   
+    margin: 0;
+    padding: 0;
   }
 
   .experienceTab {
     width: 100%;
-    height: 20%;
-    margin-left: 20px;
+    height: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    display:flex;
   }
   
   .experienceInfoTab{
-    width: 60%;
-    padding-left: 8%;
-    padding-right: 8%;
+    width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
+
+  #experienceContainer h5{
+    margin: 0 ;  
+    font-size: 40%;  
+}
+
+#experienceContainer h6{
+  margin: 0 0 0 0;  
+  font-size: 40%;  
+}
+
+#experienceContainer p{
+  margin-top: 0;  
+  font-size: 40%;  
+}
 }
