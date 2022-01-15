@@ -162,3 +162,111 @@ button:hover {
   padding-top: 20%;
   margin-left: 10%;
 }
+.hamburgerIcon{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 940px){
+
+  #mainSection {
+    height: 100vh;
+    text-align: center;
+  }
+  
+  #mainSection h1{
+    font-size: 1em;
+    padding-top: 120px;
+  }
+
+  #mainSection p{
+    font-size: 0.7em;
+  }
+
+  button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--quaternary);
+    text-align: center;
+    font-size: 1em;
+    padding: 0 3rem;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .topBarButton {
+    display: none;
+  }
+
+  .hamburgerIcon{
+    display: flex;
+    max-width: 3.8rem;
+    margin-top: 8px;
+  }
+
+  .pixelArt {
+    position: fixed;
+    bottom: 0px;
+    left: 10%;
+    animation-name: pixelAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    max-width: 170px;
+  }
+  .profilFoto {
+    float: right;
+    margin-top: 10%;
+    margin-left: 0;
+    margin-right: 0%;
+    clear: none;
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  #aboutMeSection p {
+    margin-right: 0px;
+    padding-top: 15%;
+    padding-left: 7%;
+    padding-right: 10%;
+    font-size: 2rem;
+  }
+
+  .experienceTabLinks{
+    font-size: 40%;
+    display: block;
+    text-align: center;   
+    margin: 0;
+    padding: 0;
+  }
+
+  .experienceTab {
+    width: 100%;
+    height: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    display:flex;
+  }
+  
+  .experienceInfoTab{
+    width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  #experienceContainer h5{
+    margin: 0 ;  
+    font-size: 40%;  
+}
+
+#experienceContainer h6{
+  margin: 0 0 0 0;  
+  font-size: 40%;  
+}
+
+#experienceContainer p{
+  margin-top: 0;  
+  font-size: 40%;  
+}
+}
