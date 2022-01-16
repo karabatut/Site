@@ -238,6 +238,7 @@ button:hover {
     text-align: center;   
     margin: 0;
     padding: 0;
+    flex: 1 1 150px;
   }
 
   .experienceTab {
@@ -247,6 +248,7 @@ button:hover {
     margin-right: 0;
     margin-bottom: 25px;
     display:flex;
+    flex-wrap: wrap;
   }
   
   .experienceInfoTab{
