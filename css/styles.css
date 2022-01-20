@@ -61,6 +61,17 @@ button {
 
 .topBarButton{
   height: 100%;
+  display: inline-block;
+}
+
+.hamburgerMenuButton{
+  display: none;
+}
+
+.hamburgerMenu{
+
+  position: fixed;
+  top: 70px;
 }
 
 button:hover {
@@ -229,7 +240,7 @@ button:hover {
     padding-top: 15%;
     padding-left: 7%;
     padding-right: 10%;
-    font-size: 2rem;
+    font-size: 40%;
   }
 
   .experienceTabLinks{
@@ -270,5 +281,13 @@ button:hover {
 #experienceContainer p{
   margin-top: 0;  
   font-size: 40%;  
+}
+.hamburgerMenuButton{
+  display: none;
+}
+
+.hamburgerMenu{
+  position: fixed;
+  top: 70px;
 }
 }
