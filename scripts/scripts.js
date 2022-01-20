@@ -26,6 +26,18 @@ function topBarPressed(event){
     changeTopBarButtonColor(event.currentTarget);*/
 }
 
+function hamburgerMenu(){
+    var x = document.getElementsByClassName("hamburgerMenuButton");
+    for(let button of x){
+        if (button.style.display === "block") {
+            button.style.display = "none";
+        } else {
+            button.style.display = "block";
+        }
+    }
+    
+}
+
 function tabOpener(companyName){
     var i, tabcontent;
 
