@@ -23,6 +23,10 @@ html {
   }
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   background-color: var(--primary);
   height: 100%;
@@ -243,6 +247,16 @@ button:hover {
     font-size: 40%;
   }
 
+  #aboutMeSection {
+    overflow: auto;
+    padding-top:40px;
+  }
+
+  #experienceSection {
+    overflow: auto;
+    padding-top:130px;
+  }
+
   .experienceTabLinks{
     font-size: 40%;
     display: block;
@@ -289,5 +303,15 @@ button:hover {
 .hamburgerMenu{
   position: fixed;
   top: 70px;
+  width : 100%;
+}
+.hamburgerMenuButton{
+  font-size: 30px;
+  width: 100%;
+  
+}
+#gamesSection{
+  margin-top:20%;
+  overflow: auto;
 }
 }

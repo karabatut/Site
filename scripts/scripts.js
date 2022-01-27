@@ -22,8 +22,12 @@ function changeTopBarButtonColor(element){
 }
 
 function topBarPressed(event){
-   /* defaultTopBarButtonColor();
-    changeTopBarButtonColor(event.currentTarget);*/
+    var x = document.getElementsByClassName("hamburgerMenuButton");
+    for(let button of x){
+        if (button.style.display === "block") {
+            button.style.display = "none";
+        } 
+    }
 }
 
 function hamburgerMenu(){
