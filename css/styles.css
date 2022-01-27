@@ -302,13 +302,13 @@ button:hover {
 
 .hamburgerMenu{
   position: fixed;
-  top: 70px;
+  top: 69px;
   width : 100%;
 }
 .hamburgerMenuButton{
   font-size: 30px;
   width: 100%;
-  
+  height:100%;
 }
 #gamesSection{
   margin-top:20%;
