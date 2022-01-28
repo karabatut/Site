@@ -42,7 +42,7 @@ body {
 }
 
 #aboutMeSection {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #aboutMeSection p {
@@ -99,6 +99,7 @@ button:hover {
   justify-content: space-between;
   height: 70px;
   padding: 0px 2%;
+  z-index: 1;
 }
 
 .topBarRight {
@@ -141,7 +142,7 @@ button:hover {
 }
 
 #experienceSection{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -309,6 +310,9 @@ button:hover {
   font-size: 30px;
   width: 100%;
   height:100%;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #gamesSection{
   margin-top:20%;
