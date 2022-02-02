@@ -218,6 +218,7 @@ button:hover {
     display: flex;
     max-width: 3.8rem;
     margin-top: 8px;
+    padding-right: 0px;
   }
 
   .pixelArt {
