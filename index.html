@@ -23,7 +23,7 @@
       </div>
 
       <div class="topBarRight">
-        <button onClick="hamburgerMenu()"><img class="hamburgerIcon" src="images/hamburgerIcon.png" alt="" /></button>
+        <button class="topBarHamburgerButton" onClick="hamburgerMenu()"><img class="hamburgerIcon" src="images/hamburgerIcon.png" alt="" /></button>
         <a href="#aboutMeSection"><button type="button" id="aboutMeSectionButton" class="topBarButton" onClick="topBarPressed(event)">About Me</button></a>
         <a href="#experienceSection"><button type="button" id="experienceSectionButton" class="topBarButton" onClick="topBarPressed(event)">Experience</button></a>
         <a href="#gamesSection"><button type="button" id="gamesSectionButton" class="topBarButton" onClick="topBarPressed(event)">Games</button></a>
@@ -45,7 +45,14 @@
       <section id="mainSection">
         <h1>Hi, I'm Batuhan</h1>
         <p>Software engineer, Gamedev, Super cool guy</p>
-        <img class="pixelArt" src="images/PixelArt.png" alt="" />
+        <div class="pixelArt">
+          <div class="talkBubble">
+            <p>Deneme</p>
+          </div>
+          
+          <img src="images/PixelArt.png" alt="" />
+        </div>
+        
       </section>
       <section id="aboutMeSection">
         <img class="profilFoto" src="images/Batu.jpeg" alt="" />

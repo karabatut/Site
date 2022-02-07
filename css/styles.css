@@ -23,6 +23,18 @@ html {
   }
 }
 
+.talkBubble{
+  display: inline-block;
+  position: relative;
+  top: 80px;
+  width: 200px;
+  height: auto;
+  background-color: lightyellow;
+  color: #393e46;
+  border-radius: 30px;
+  
+}
+
 a{
   text-decoration: none;
 }
@@ -125,6 +137,10 @@ button:hover {
   animation-name: pixelAnimation;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+}
+
+.pixelArt:hover{
+  animation-play-state: paused;
 }
 
 .experienceTab {
@@ -287,36 +303,40 @@ button:hover {
   #experienceContainer h5{
     margin: 0 ;  
     font-size: 40%;  
-}
+  }
 
-#experienceContainer h6{
-  margin: 0 0 0 0;  
-  font-size: 40%;  
-}
+  #experienceContainer h6{
+    margin: 0 0 0 0;  
+    font-size: 40%;  
+  }
 
-#experienceContainer p{
-  margin-top: 0;  
-  font-size: 40%;  
-}
-.hamburgerMenuButton{
-  display: none;
-}
+  #experienceContainer p{
+    margin-top: 0;  
+    font-size: 40%;  
+  }
+  .hamburgerMenuButton{
+    display: none;
+  }
 
-.hamburgerMenu{
-  position: fixed;
-  top: 69px;
-  width : 100%;
-}
-.hamburgerMenuButton{
-  font-size: 30px;
-  width: 100%;
-  height:100%;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-#gamesSection{
-  margin-top:20%;
-  overflow: auto;
-}
+  .hamburgerMenu{
+    position: fixed;
+    top: 69px;
+    width : 100%;
+  }
+  .hamburgerMenuButton{
+    font-size: 30px;
+    width: 100%;
+    height:100%;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #gamesSection{
+    margin-top:20%;
+    overflow: auto;
+  }
+
+  .topBarHamburgerButton{
+    padding-right: 20px;
+  }
 }
