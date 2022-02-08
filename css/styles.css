@@ -273,6 +273,15 @@ button:hover {
     animation-iteration-count: infinite;
     max-width: 170px;
   }
+
+  .pixelArtImage{
+    max-width: 170px;
+  }
+
+  .talkBubble{
+    top:50px;
+  }
+
   .profilFoto {
     float: right;
     margin-top: 10%;
