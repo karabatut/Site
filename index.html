@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Batut Homepage</title>
     <link rel="icon" href="favicon.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +24,7 @@
       </div>
 
       <div class="topBarRight">
-        <button onClick="hamburgerMenu()"><img class="hamburgerIcon" src="images/hamburgerIcon.png" alt="" /></button>
+        <button class="topBarHamburgerButton" onClick="hamburgerMenu()"><img class="hamburgerIcon" src="images/hamburgerIcon.png" alt="" /></button>
         <a href="#aboutMeSection"><button type="button" id="aboutMeSectionButton" class="topBarButton" onClick="topBarPressed(event)">About Me</button></a>
         <a href="#experienceSection"><button type="button" id="experienceSectionButton" class="topBarButton" onClick="topBarPressed(event)">Experience</button></a>
         <a href="#gamesSection"><button type="button" id="gamesSectionButton" class="topBarButton" onClick="topBarPressed(event)">Games</button></a>
@@ -45,7 +46,17 @@
       <section id="mainSection">
         <h1>Hi, I'm Batuhan</h1>
         <p>Software engineer, Gamedev, Super cool guy</p>
-        <img class="pixelArt" src="images/PixelArt.png" alt="" />
+        <div class="pixelArt">
+          <div class="talkBubble">
+            <i class="fa fa-linkedin-square"></i>
+              <a class="bubbleLink" href="https://www.linkedin.com/in/mehmet-batuhan-karaarslan-59689b107/">LinkedIn</a>
+              <br>
+              <i class="fa fa-github"></i>
+              <a class="bubbleLink" href="https://github.com/karabatut">GitHub</a>
+          </div>
+          <img src="images/PixelArt.png" alt="" />
+        </div>
+        
       </section>
       <section id="aboutMeSection">
         <img class="profilFoto" src="images/Batu.jpeg" alt="" />
