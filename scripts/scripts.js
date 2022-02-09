@@ -61,6 +61,22 @@ function getCompanyButtonName(companyName){
     return companyName.charAt(0).toLowerCase() + companyName.slice(1) + "Button";
 }
 
+function pixelArtClick(){
+    
+    if(window.innerWidth <= 940){
+
+        var x = document.getElementsByClassName("talkBubble");
+        var y = document.getElementsByClassName("pixelArt");
+        if(x[0].style.display === "inline-block"){
+            x[0].style.display = "none";
+            y[0].style.animationPlayState = "running";
+        }else{
+            x[0].style.display = "inline-block"; 
+            y[0].style.animationPlayState = "paused";
+        }
+    }
+}
+
 window.addEventListener("scroll", function(){
     var mainSection = document.getElementById("mainSection");
     var aboutMeSection = document.getElementById("aboutMeSection");
