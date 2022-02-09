@@ -58,6 +58,7 @@ a{
 body {
   background-color: var(--primary);
   height: 100%;
+  margin-left: 0;
 }
 
 .logo{
@@ -67,6 +68,7 @@ body {
 #mainSection {
   height: 70vh;
   text-align: center;
+  margin-left: 8px;
 }
 
 #aboutMeSection {
@@ -148,7 +150,7 @@ button:hover {
 
 .pixelArt {
   position: fixed;
-  bottom: 0px;
+  bottom: -20px;
   left: 10%;
   animation-name: pixelAnimation;
   animation-duration: 10s;
@@ -165,10 +167,7 @@ button:hover {
 
 .bubbleLink{
   color:#393e46
-  
 }
-
-
 
 .experienceTab {
   width: 20%;
@@ -266,7 +265,7 @@ button:hover {
 
   .pixelArt {
     position: fixed;
-    bottom: 0px;
+    bottom: -20px;
     left: 10%;
     animation-name: pixelAnimation;
     animation-duration: 10s;
@@ -375,4 +374,6 @@ button:hover {
   .topBarHamburgerButton{
     padding-right: 20px;
   }
+
+
 }
