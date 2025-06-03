@@ -54,7 +54,7 @@ function tabOpener(companyName){
 }
 
 function clickOnDefaultTab(){
-    document.getElementById("provenButton").click();
+    document.getElementById("kirpiButton").click();
 }
 
 function getCompanyButtonName(companyName){
@@ -106,3 +106,28 @@ document.addEventListener('visibilitychange', function (event) {
         document.title = "Batut Homepage";
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordions = document.querySelectorAll(".accordion details");
+  
+    accordions.forEach((detail) => {
+      detail.addEventListener("toggle", function () {
+        if (this.open) {
+          // Close others
+          accordions.forEach((other) => {
+            if (other !== this) {
+              other.removeAttribute("open");
+            }
+          });
+  
+          // Scroll to this accordion
+          setTimeout(() => {
+            const yOffset = -80; // adjust this to match your topBar height
+            const y = this.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }, 100);
+        }
+      });
+    });
+  });
+  

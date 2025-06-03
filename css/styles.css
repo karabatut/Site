@@ -184,7 +184,7 @@ button:hover {
 }
 
 #experienceSection{
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 
@@ -224,9 +224,87 @@ button:hover {
   display: none;
 }
 
+.experience-mobile {
+  display: none;
+}
+.experience-desktop {
+  display: block;
+}
 
+.accordion details {
+  background-color: transparent; /* matches your page */
+  margin: 10px 5%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--secondary); /* subtle separator */
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  color: var(--quaternary);
+}
+
+/* Summary appearance */
+.accordion summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  list-style: none;
+  color: var(--quaternary);
+}
+
+/* Hide default triangle */
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add custom triangle */
+.accordion summary::after {
+  content: '▾';
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate triangle when open */
+.accordion details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* Orange color when open */
+.accordion details[open] summary {
+  color: var(--tertiary);
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 120px;
+}
+
+.centered-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
 
 @media screen and (max-width: 940px){
+
+  .experience-mobile {
+    display: block;
+  }
+  .experience-desktop {
+    display: none;
+  }
 
   #mainSection {
     height: 100vh;
@@ -310,12 +388,13 @@ button:hover {
     padding-top:130px;
   }
 
+
   .experienceTabLinks{
     font-size: 40%;
     display: block;
     text-align: center;   
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     flex: 1 1 150px;
   }
 
@@ -325,7 +404,7 @@ button:hover {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 25px;
-    display:flex;
+    /*display:flex;*/
     flex-wrap: wrap;
   }
   
@@ -374,6 +453,29 @@ button:hover {
   .topBarHamburgerButton{
     padding-right: 20px;
   }
+  .centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 120px;
+  }
+  
+  .centered-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 25px;
+  }
 
+  .row {
+    display: block;
+  }
+  
+  .column {
+    /*flex: 33.33%;*/
+    padding: 50%px;
+  }
 
 }

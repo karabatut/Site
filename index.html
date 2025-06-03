@@ -45,7 +45,7 @@
     <div class="middleContainer">
       <section id="mainSection">
         <h1>Hi, I'm Batuhan</h1>
-        <p>Software engineer, Gamedev, Super cool guy</p>
+        <p>Software engineer, Gamedev, Just some guy</p>
         <div class="pixelArt" onclick="pixelArtClick()">
           <div class="talkBubble">
             <i class="fa fa-twitter"></i>
@@ -65,50 +65,143 @@
         <img class="profilFoto" src="images/Batu.jpeg" alt="" />
         <p>
           Graduated from Bilkent University, Electrical and Electronics
-          Engineering department. Passion for Game Development, never formally
-          practiced it though. Working on a mobile game as a solo dev. Currently
-          employed in Proven Bilişim as a Senior Software Developer.
+          Engineering department. Worked with lots of different defense contractors. 
+          Currently working in Kirpi Studio as CEO and Lead Game Developer. We have 2 mobile games released,
+          and 1 PC game on the way.
         </p>
       </section>
       <section id="experienceSection">
           <div id="experienceContainer">
-            <div class="experienceTab">
-                <button class="experienceTabLinks" onClick="openTab(event, 'Proven')" id="provenButton">Proven Bilişim</button><br />
-                <button class="experienceTabLinks" onClick="openTab(event, 'Otonom')" id="otonomButton">Otonom Teknoloji</button><br />
-                <button class="experienceTabLinks" onClick="openTab(event, 'Aselsan')" id="aselsanButton">Aselsan MGEO</button><br />
-                <button class="experienceTabLinks" onClick="openTab(event, 'Desistek')" id="desistekButton">Desistek Robotik</button><br />
-              </div>
-              <div class="experienceInfoTab">
-                <div id="Proven" class="experienceTabContent">
-                  <h5>June 2019 - current</h5>
-                  <h6>Senior Software Developer</h6>
-                  <p>Developed test software for test projects. Deveolped software for ASELSAN personnel to use. 
-                    These software were mostly for receiving and transmitting messages over serial and ethernet connections. 
-                    They were developed using Java and JavaFX.</p>
-                  <h6>Software Test Engineer</h6>
-                  <p>Worked as Test Engineer for various ASELSAN projects. Tested software mostly for military marine applications. 
-                    The performed tests were all manual tests. Developed test software for test projects. 
-                    These software were mostly for receiving and transmitting messages over serial and ethernet connections. 
-                    They were developed using Java and C#.</p>
+            <div class="experience-desktop">
+              <div class="experienceTab">
+                  <a href="#experienceSection"><button class="experienceTabLinks" onClick="openTab(event, 'Kirpi');topBarPressed(event);" id="kirpiButton">Kirpi Studio</button></a><br />
+                  <a href="#experienceSection"><button class="experienceTabLinks" onClick="openTab(event, 'Proven');topBarPressed(event);" id="provenButton">Proven Bilişim</button></a><br />
+                  <a href="#experienceSection"><button class="experienceTabLinks" onClick="openTab(event, 'Otonom');topBarPressed(event);" id="otonomButton">Otonom Teknoloji</button></a><br />
+                  <a href="#experienceSection"><button class="experienceTabLinks" onClick="openTab(event, 'Aselsan');topBarPressed(event);" id="aselsanButton">Aselsan MGEO</button></a><br />
+                  <a href="#experienceSection"><button class="experienceTabLinks" onClick="openTab(event, 'Desistek');topBarPressed(event);" id="desistekButton">Desistek Robotik</button></a><br />
                 </div>
-                <div id="Otonom" class="experienceTabContent">
+                <div class="experienceInfoTab">
+                  <div id="Kirpi" class="experienceTabContent">
+                    <h5>January 2023 - current</h5>
+                    <h6>CEO and Lead Game Developer</h6>
+                    <p>
+                      Worked on 2 Mobile and 1 PC games as Lead Game Developer to a 4 people crew.
+                    </p>
+                    <h6>Chroma Defense</h6>
+                    <p>
+                      A test-bed to gauge our abilities and how the game market performs. It's a simple game where the player
+                      had to rotate a color shield to intercept incoming stuff by matching their colors. Aside from normal 
+                      development, worked on integrating Unity Ads and In-App Purchases.
+                    </p>
+                    <h6>Ur Legacy</h6>
+                    <p>
+                      This game was based on the 4000 year old board game "Royal Game of Ur". We put in some cosmetics and sumerian characters to the game,
+                      and made it multiplayer. Didn't put ads though because I HATE ADS. We worked really hard to create a well made, well polished game, and I think
+                      we got there.
+                    </p>
+                    <h6>Hissar</h6>
+                    <p>
+                      This is our current project. In this title we wanted to shift away from the mobile space to the PC market. There is less money to be made 
+                      in the PC market but we found it to be more flexible in almost every aspect. This game is a combination of deck building and tower defense genres.
+                      It is still in development but almost all of the basic functionality is present at the moment.
+                    </p>
+                  </div>
+                  <div id="Proven" class="experienceTabContent">
+                    <h5>June 2019 - current</h5>
+                    <h6>Senior Software Developer</h6>
+                    <p>Developed test software for test projects. Deveolped software for ASELSAN personnel to use. 
+                      These software were mostly for receiving and transmitting messages over serial and ethernet connections. 
+                      They were developed using Java and JavaFX.</p>
+                    <h6>Software Test Engineer</h6>
+                    <p>Worked as Test Engineer for various ASELSAN projects. Tested software mostly for military marine applications. 
+                      The performed tests were all manual tests. Developed test software for test projects. 
+                      These software were mostly for receiving and transmitting messages over serial and ethernet connections. 
+                      They were developed using Java and C#.</p>
+                  </div>
+                  <div id="Otonom" class="experienceTabContent">
+                    <h5>April 2018 - May 2019</h5>
+                    <h6>Software Test Engineer</h6>
+                    <p>Worked as a subcontractor personnel at ASELSAN MGEO. Tested driver software for Hürkuş and Turkish Utility Helicopter Program. 
+                      Since these tests were so low level tests, they were done using code. All of the tests were written in C++. 
+                      Responsibilities included writing and running the tests, performing Software Coverage Analysis tests, reporting findings and performing FQTs. 
+                      The tested drivers had to be certified as Level-A, so the tests were run according to the DO-178B guidelines.</p>
+                  </div>
+                  <div id="Aselsan" class="experienceTabContent">
+                    <h5>July 2016 - August 2016</h5>
+                    <h6>Intern</h6>
+                    <p>Worked in the quality control department.</p>
+                  </div>
+                  <div id="Desistek" class="experienceTabContent">
+                    <h5>June 2015 - July 2015</h5>
+                    <h6>Intern</h6>
+                    <p>Worked on various design projects, mainly using microcontrollers.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="experience-mobile">
+              <div class="accordion">
+                <details>
+                  <summary>Kirpi Studio</summary>
+                  <h5>January 2023 - current</h5>
+                    <h6>CEO and Lead Game Developer</h6>
+                    <p>
+                      Worked on 2 Mobile and 1 PC games as Lead Game Developer to a 4 people crew.
+                    </p>
+                    <h6>Chroma Defense</h6>
+                    <p>
+                      A test-bed to gauge our abilities and how the game market performs. It's a simple game where the player
+                      had to rotate a color shield to intercept incoming stuff by matching their colors. Aside from normal 
+                      development, worked on integrating Unity Ads and In-App Purchases.
+                    </p>
+                    <h6>Ur Legacy</h6>
+                    <p>
+                      This game was based on the 4000 year old board game "Royal Game of Ur". We put in some cosmetics and sumerian characters to the game,
+                      and made it multiplayer. Didn't put ads though because I HATE ADS. We worked really hard to create a well made, well polished game, and I think
+                      we got there.
+                    </p>
+                    <h6>Hissar</h6>
+                    <p>
+                      This is our current project. In this title we wanted to shift away from the mobile space to the PC market. There is less money to be made 
+                      in the PC market but we found it to be more flexible in almost every aspect. This game is a combination of deck building and tower defense genres.
+                      It is still in development but almost all of the basic functionality is present at the moment.
+                    </p>
+                </details>
+                <details>
+                  <summary>Proven</summary>
+                  <h5>June 2019 - current</h5>
+                    <h6>Senior Software Developer</h6>
+                    <p>Developed test software for test projects. Deveolped software for ASELSAN personnel to use. 
+                      These software were mostly for receiving and transmitting messages over serial and ethernet connections. 
+                      They were developed using Java and JavaFX.</p>
+                    <h6>Software Test Engineer</h6>
+                    <p>Worked as Test Engineer for various ASELSAN projects. Tested software mostly for military marine applications. 
+                      The performed tests were all manual tests. Developed test software for test projects. 
+                      These software were mostly for receiving and transmitting messages over serial and ethernet connections. 
+                      They were developed using Java and C#.</p>
+                </details>
+                <details>
+                  <summary>Otonom</summary>
                   <h5>April 2018 - May 2019</h5>
                   <h6>Software Test Engineer</h6>
                   <p>Worked as a subcontractor personnel at ASELSAN MGEO. Tested driver software for Hürkuş and Turkish Utility Helicopter Program. 
                     Since these tests were so low level tests, they were done using code. All of the tests were written in C++. 
                     Responsibilities included writing and running the tests, performing Software Coverage Analysis tests, reporting findings and performing FQTs. 
                     The tested drivers had to be certified as Level-A, so the tests were run according to the DO-178B guidelines.</p>
-                </div>
-                <div id="Aselsan" class="experienceTabContent">
+                </details>
+                <details>
+                  <summary>Aselsan</summary>
                   <h5>July 2016 - August 2016</h5>
-                  <h6>Intern</h6>
-                  <p>Worked in the quality control department.</p>
-                </div>
-                <div id="Desistek" class="experienceTabContent">
+                    <h6>Intern</h6>
+                    <p>Worked in the quality control department.</p>
+                </details>
+                <details>
+                  <summary>Desistek</summary>
                   <h5>June 2015 - July 2015</h5>
-                  <h6>Intern</h6>
-                  <p>Worked on various design projects, mainly using microcontrollers.</p>
-                </div>
+                    <h6>Intern</h6>
+                    <p>Worked on various design projects, mainly using microcontrollers.</p>
+                </details>
+              </div>
+
             </div>
           </div>
         
@@ -117,9 +210,35 @@
         </script>
       </section>
       <section id="gamesSection">
-        <div>
-          <p>Things... that have not yet come to pass.</p>
+        <div class = "centered-image">
+          <img src="images/ChromaDefense.png" alt="" style="width: 60%; "/>
         </div>  
+        <div class = "centered-image" style="padding-top: 0px;">
+          <div class="row">
+            <div class="column">
+              <a href="https://apps.apple.com/tr/app/chroma-defense/id6446486268?l=tr"target="_blank"><img src="images/AppStore.png" alt="" style="width: 100%; "></a>
+            </div>
+            <div class="column">
+              <a href="https://play.google.com/store/apps/details?id=com.KirpiStudio.ChromaDefense"target="_blank"><img src="images/PlayStore.png" alt=""style="width: 100%; "></a>
+            </div>
+          </div>  
+        </div>
+        
+        <div class = "centered-image" >
+          <img src="images/UrLegacy.png" alt="" style="width: 60%; "/>
+        </div>  
+        <div class = "centered-image" style="padding-top: 0px;">
+          <div class="row">
+            <div class="column">
+              <a href="https://apps.apple.com/us/app/ur-legacy/id6476514796"target="_blank"><img src="images/AppStore.png" alt="" style="width: 100%; "></a>
+            </div>
+            <div class="column">
+              <a href="https://play.google.com/store/apps/details?id=com.KirpiStudio.UrLegacy"target="_blank"><img src="images/PlayStore.png" alt=""style="width: 100%; "></a>
+            </div>
+          </div>  
+        </div>
+        
+        <div style="padding-bottom: 200px;"></div>
       </section>
     </div>
   </body>
