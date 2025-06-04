@@ -130,4 +130,20 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  window.addEventListener("load", function () {
+    // Eğer sayfa #experienceSection ile yüklendiyse:
+    if (window.location.hash === "#experienceSection") {
+      // Scroll'u en üste al
+      window.scrollTo(0, 0);
+      // hash'i temizle (opsiyonel)
+      history.replaceState(null, null, " ");
+    }
+  
+    // Sonrasında deneyim butonunu tıklat
+    const defaultButton = document.querySelector(".experience-button");
+    if (defaultButton) {
+      defaultButton.click();
+    }
+  });
   

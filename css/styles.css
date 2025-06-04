@@ -214,12 +214,16 @@ button:hover {
 
 #gamesSection{
   height: 100vh;
+  overflow: visible !important;
+  max-height: none !important;
 }
 
 #gamesSection p{
   padding-top: 20%;
   margin-left: 10%;
 }
+
+
 .hamburgerIcon{
   display: none;
 }
